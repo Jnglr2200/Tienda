@@ -1,0 +1,103 @@
+/* Estilos específicos para la página de galería */
+.titulo-galeria {
+    text-align: center;
+    margin: 40px 0;
+    color: #333;
+    font-size: 2.5em;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    background: #fff;
+    border: 2px solid #84c0d9;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-filtro:hover, .btn-filtro.active {
+    background: #84c0d9;
+    color: #fff;
+}
+
+/* Galería de dibujos */
+.galeria-dibujos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.dibujo-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dibujo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.dibujo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.dibujo-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.dibujo-info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.dibujo-info p {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+/* Botón Agregar al carrito */
+.btn-agregar {
+    background-color: #84c0d9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #5fa9c4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .galeria-dibujos {
+        grid-template-columns: 1fr;
+    }
+}

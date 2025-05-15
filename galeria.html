@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Dibujos | MiArte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galeria.css"> <!-- CSS específico para galería -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MiArte</div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html" class="active">Galería</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html" class="enlace-carrito">🛒 <span id="contador-carrito" class="contador">0</span></a>
+</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-galeria">Mi Colección de Dibujos</h1>
+        
+        <!-- Filtros -->
+        <div class="filtros">
+            <button class="btn-filtro active" data-categoria="todos">Todos</button>
+            <button class="btn-filtro" data-categoria="retratos">Retratos</button>
+            <button class="btn-filtro" data-categoria="anime">Anime</button>
+            <button class="btn-filtro" data-categoria="paisajes">Paisajes</button>
+        </div>
+
+        <div class="galeria-dibujos">
+            <!-- Retratos-->
+            <div class="dibujo-card" data-categoria="retratos">
+                <img src="imagenes/foto1.jpg" alt="Retrato al carbón">
+                <div class="dibujo-info">
+                    <h3>Retrato al carbón</h3>
+                    <p>$50.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+             <div class="dibujo-card" data-categoria="retratos">
+                <img src="imagenes/foto2.jpg" alt="Retrato al carbón">
+                <div class="dibujo-info">
+                    <h3>Retrato al carbón</h3>
+                    <p>$50.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+             <div class="dibujo-card" data-categoria="retratos">
+                <img src="imagenes/foto3.jpg" alt="Retrato al carbón">
+                <div class="dibujo-info">
+                    <h3>Retrato al carbón</h3>
+                    <p>$50.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+             <div class="dibujo-card" data-categoria="retratos">
+                <img src="imagenes/foto4.jpg" alt="Retrato al carbón">
+                <div class="dibujo-info">
+                    <h3>Retrato al carbón</h3>
+                    <p>$50.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+             <div class="dibujo-card" data-categoria="retratos">
+                <img src="imagenes/foto7.jpg" alt="Retrato al carbón">
+                <div class="dibujo-info">
+                    <h3>Retrato al carbón</h3>
+                    <p>$50.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            
+
+
+
+
+
+
+
+            <!-- ANIME-->
+
+            <div class="dibujo-card" data-categoria="anime">
+                <img src="imagenes/anime1.jpg" alt="Atardecer en montañas">
+                <div class="dibujo-info">
+                    <h3>Atardecer en montañas</h3>
+                    <p>$65.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="dibujo-card" data-categoria="anime">
+                <img src="imagenes/anime2.jpg" alt="Personaje anime">
+                <div class="dibujo-info">
+                    <h3>Personaje anime</h3>
+                    <p>$45.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="dibujo-card" data-categoria="anime">
+                <img src="imagenes/anime3.jpg" alt="Personaje anime">
+                <div class="dibujo-info">
+                    <h3>Personaje anime</h3>
+                    <p>$45.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="dibujo-card" data-categoria="anime">
+                <img src="imagenes/anime4.jpg" alt="Personaje anime">
+                <div class="dibujo-info">
+                    <h3>Personaje anime</h3>
+                    <p>$45.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!--PAISAJES-->
+
+            <div class="dibujo-card" data-categoria="paisajes">
+                <img src="imagenes/paisaje1.jpg" alt="Paisajes">
+                <div class="dibujo-info">
+                    <h3>Personaje anime</h3>
+                    <p>$45.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="dibujo-card" data-categoria="paisajes">
+                <img src="imagenes/paisaje3.jpeg" alt="Paisajes">
+                <div class="dibujo-info">
+                    <h3>Personaje anime</h3>
+                    <p>$45.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="dibujo-card" data-categoria="paisajes">
+                <img src="imagenes/paisaje4.jpeg" alt="Paisajes">
+                <div class="dibujo-info">
+                    <h3>Personaje anime</h3>
+                    <p>$45.00</p>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+                
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 MiArte. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/galeria.js"></script>
+</body>
+</html>
